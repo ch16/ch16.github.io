@@ -18,6 +18,19 @@ body {font-family: "Lato", sans-serif}
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 767px) {
+   .centered {
+      display: none;
+   }
+}
+
+@media (min-width: 767px) {
+   .mobile {
+      display: none;
+   }
+}
+
 </style>
 <body>
 
@@ -49,13 +62,14 @@ body {font-family: "Lato", sans-serif}
     <img src="/images/header_image.png" style="max-width:720px; width:100%;">
     <div class="centered">
       <font color="white" size = "23">Someone come up with a slogan?</font>
-      <br><br>
-      <span><font color="white" size = "20">Maybe a radio player down here?</font></span>
     </div>
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
     </div>
   </div>
 
+  <div class="mobile">
+    <font color="white" size = "14">Someone come up with a slogan?</font>
+  </div>
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
